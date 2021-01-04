@@ -1,0 +1,19 @@
+server:
+  port: 9120
+spring:
+  profiles:
+    active: online
+    
+env:
+  eureka:
+    server:
+      port: 9100
+      hostname: nas.canstory.top
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://${env.eureka.server.hostname}:${env.eureka.server.port}/eureka/
