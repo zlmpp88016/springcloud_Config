@@ -1,0 +1,19 @@
+server:
+  port: 9010
+spring:
+  profiles:
+    active: local
+    
+local:
+  eureka:
+    server:
+      port: 9000
+      hostname: localhost
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://${local.eureka.server.hostname}:${local.eureka.server.port}/eureka/
