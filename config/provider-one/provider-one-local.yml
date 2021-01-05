@@ -3,6 +3,8 @@ server:
 spring:
   profiles:
     active: local
+logging:
+  path: E:\logs\cloud\
     
 env:
   eureka:
