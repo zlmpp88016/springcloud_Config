@@ -1,7 +1,10 @@
 server:
   port: 9020
+# 日志
 logging:
-  path: E:\logs\cloud\
+  level:
+    root: INFO
+  path: E:/logs/cloud/providerone
     
 env:
   eureka:
