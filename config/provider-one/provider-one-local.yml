@@ -47,7 +47,3 @@ spring:
 mybatis:
   mapper-locations: classpath:/mapper/*.xml   #mapper文件地址
   config-location: classpath:sqlMapConfig.xml #配置模型路径
-# 日志
-logging:
-  level:
-    root: INFO
