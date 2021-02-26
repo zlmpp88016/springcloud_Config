@@ -1,8 +1,5 @@
 server:
   port: 9020
-spring:
-  profiles:
-    active: local
 logging:
   path: E:\logs\cloud\
     
@@ -21,6 +18,8 @@ eureka:
       defaultZone: http://${env.eureka.server.hostname}:${env.eureka.server.port}/eureka/
 # mysql部分
 spring:
+  profiles:
+    active: local
   datasource:
     url: jdbc:mysql://localhost:3306/origin_provider?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
     username: root
