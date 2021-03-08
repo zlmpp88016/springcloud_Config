@@ -24,4 +24,5 @@ logging:
   level:
     root: INFO
   path: E:/logs/cloud/consumerone
-  
+properties: 
+  user: zl
