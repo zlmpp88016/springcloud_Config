@@ -25,4 +25,4 @@ logging:
     root: INFO
   path: E:/logs/cloud/consumerone
 properties: 
-  user: zl
+  user: zll
